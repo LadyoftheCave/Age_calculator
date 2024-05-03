@@ -1,0 +1,199 @@
+body {
+  background-color: hsl(259.6, 100%, 89.2%);
+  display: grid;
+  place-items: center;
+  /* min-block-size: 100vh; */
+  font-family: "Poppins", sans-serif;
+}
+
+.input_box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input_box input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: rgb(12, 12, 12);
+  font-size: 1rem;
+}
+
+input#submitbutton {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  inline-size: 27%;
+  block-size: 27%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  /* border-bottom: 10px solid black; */
+  position: relative;
+  z-index: 10;
+}
+
+input#submitbutton:hover {
+  background-color: black;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  inline-size: 18rem;
+  height: 1px;
+  background-color: rgb(230, 229, 229);
+  z-index: 1;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 0.8rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+form#ageform {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  inline-size: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  inline-size: 21rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px 15px 120px 15px;
+  block-size: 30rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+input {
+  inline-size: 4.5rem;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 86%);
+  block-size: 3rem;
+  padding-inline-start: 1rem;
+}
+
+#dayBorder:focus,
+#monthBorder:focus,
+#yearBorder:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(259, 100%, 65%);
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: rgb(117, 116, 116);
+  font-size: 1rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+#required_day,
+#required_month,
+#required_year {
+  color: hsl(0, 100%, 67%);
+  font-weight: 300;
+  font-size: 0.55rem;
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
+.age_container {
+  padding-inline-start: 0.5rem;
+}
+
+@keyframes draaien {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.transform {
+  display: inline-block;
+  animation: draaien 0.1s linear;
+  animation-iteration-count: 20;
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    inline-size: 41rem;
+    padding: 1rem 0rem 3rem 3rem;
+  }
+  .input_box {
+    display: flex;
+    inline-size: 100%;
+  }
+
+  h2 {
+    font-size: 5rem;
+    margin-top: 0;
+  }
+
+  input#submitbutton {
+    inline-size: 36%;
+    block-size: 36%;
+    inline-size: 2rem;
+    margin-right: 2rem;
+  }
+
+  form#ageform { 
+    align-items: unset;
+  }
+
+  input {
+    inline-size: 5.5rem;
+  }
+
+  .input_box {
+    gap: 1.5rem;
+  }
+
+  #required_day,
+  #required_month,
+  #required_year {
+    font-size: 0.6rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+
+
+}

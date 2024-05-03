@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <section>
+      <form action="" id="ageform">
+        <div class="input_box">
+          <div class="day box">
+            <label for="day" id="day">Day</label>
+            <input type="text" placeholder="DD" id="dayBorder" />
+            <p id="required_day"></p>
+          </div>
+
+          <div class="month box">
+            <label for="month" id="month">Month</label>
+            <input type="text" placeholder="MM" id="monthBorder" />
+            <p id="required_month"></p>
+          </div>
+
+          <div class="year box">
+            <label for="year" id="year">Year</label>
+            <input type="text" placeholder="YYYY" id="yearBorder" />
+            <p id="required_year"></p>
+          </div>
+        </div>
+        <div class="img-container">
+          <input
+            type="image"
+            src="assets/images/icon-arrow.svg"
+            alt="Submit"
+            id="submitbutton"
+          />
+        </div>
+      </form>
+
+      <div class="age_container">
+        <h2><span id="years">--</span> years</h2>
+        <h2><span id="months">--</span> months</h2>
+        <h2><span id="days">--</span> days</h2>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
